@@ -517,33 +517,29 @@ figcaption {
   color: var(--cp-text-muted);
 }
 
-.evidence {
+.experience-areas {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 1rem;
   border-top: 1px solid var(--cp-border);
   border-bottom: 1px solid var(--cp-border);
 }
 
-.evidence div {
+.experience-areas div {
   padding: 2rem 1.5rem;
 }
 
-.evidence div + div {
+.experience-areas div + div {
   border-left: 1px solid var(--cp-border);
 }
 
-.evidence dt {
+.experience-areas h3 {
   color: var(--cp-link);
-  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  font-size: 2rem;
-  line-height: 1.1;
 }
 
-.evidence dd {
+.experience-areas p {
   margin-top: 0.75rem;
   color: var(--cp-text-muted);
-  font-size: 0.9rem;
 }
 
 .career {
@@ -739,25 +735,14 @@ body[data-ready] .hero > :nth-child(5) { animation-delay: 240ms; }
   }
 
   .method-list,
-  .evidence {
+  .experience-areas {
     grid-template-columns: minmax(0, 1fr);
   }
 
   .method-list li + li,
-  .evidence div + div {
+  .experience-areas div + div {
     border-left: 0;
     border-top: 1px solid var(--cp-border);
-  }
-
-  .evidence div {
-    display: grid;
-    grid-template-columns: 7rem 1fr;
-    gap: 1rem;
-    align-items: baseline;
-  }
-
-  .evidence dd {
-    margin-top: 0;
   }
 
   .career p {
