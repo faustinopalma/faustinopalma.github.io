@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faustinopalma.github.io/sitemap.xml

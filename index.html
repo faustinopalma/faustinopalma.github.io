@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <title>Faustino Palma | Cloud, AI, and applied research</title>
+  <meta name="description" content="Faustino Palma designs and builds cloud and AI systems, from architecture to verified operation.">
+  <meta name="author" content="Faustino Palma">
+  <link rel="canonical" href="https://faustinopalma.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Faustino Palma | Cloud, AI, and applied research">
+  <meta property="og:description" content="Systems, experiments, and tools built from the problem to verified operation.">
+  <meta property="og:url" content="https://faustinopalma.github.io/">
+  <meta property="og:image" content="https://faustinopalma.github.io/assets/quantistica.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Faustino Palma",
+      "url": "https://faustinopalma.github.io/",
+      "sameAs": [
+        "https://github.com/faustinopalma",
+        "https://www.linkedin.com/in/faustinopalma/",
+        "https://laquantistica.com/"
+      ],
+      "knowsAbout": ["Cloud architecture", "Artificial intelligence", "MLOps", "Microsoft Azure", "Operations research", "Quantum mechanics"]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content" data-en="Skip to content" data-it="Vai al contenuto">Skip to content</a>
+  <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false" title="Open navigation">
+    <span aria-hidden="true">☰</span><span class="sr-only" data-en="Open navigation" data-it="Apri la navigazione">Open navigation</span>
+  </button>
+  <div class="scrim" hidden></div>
+
+  <div class="layout">
+    <header class="sidebar" id="sidebar">
+      <a class="brand" href="#top" aria-label="Faustino Palma, home">
+        <span class="brand-mark" aria-hidden="true">FP</span>
+        <span class="brand-name">Faustino Palma</span>
+        <small data-en="Cloud, AI, applied research" data-it="Cloud, AI, ricerca applicata">Cloud, AI, applied research</small>
+      </a>
+
+      <div class="language" role="group" aria-label="Language">
+        <button type="button" data-language="en" aria-pressed="true">EN</button>
+        <button type="button" data-language="it" aria-pressed="false">IT</button>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#work"><span class="nav-number">01</span><span data-en="Work" data-it="Progetti">Work</span></a>
+        <a href="#method"><span class="nav-number">02</span><span data-en="Method" data-it="Metodo">Method</span></a>
+        <a href="#experience"><span class="nav-number">03</span><span data-en="Experience" data-it="Esperienza">Experience</span></a>
+        <a href="#contact"><span class="nav-number">04</span><span data-en="Contact" data-it="Contatti">Contact</span></a>
+      </nav>
+
+      <p class="side-note" data-en="The site contains public work only. Client and environment details remain confidential." data-it="Il sito contiene solo lavori pubblici. I dettagli relativi a clienti e ambienti restano riservati.">The site contains public work only. Client and environment details remain confidential.</p>
+      <div class="side-links">
+        <a href="https://github.com/faustinopalma" rel="me">GitHub</a>
+        <a href="https://www.linkedin.com/in/faustinopalma/" rel="me">LinkedIn</a>
+      </div>
+    </header>
+
+    <main class="content" id="content" tabindex="-1">
+      <article class="page">
+        <section class="hero full" id="top" aria-labelledby="hero-title">
+          <p class="eyebrow" data-en="Engineer and technology leader" data-it="Ingegnere e responsabile tecnologico">Engineer and technology leader</p>
+          <h1 id="hero-title">Faustino Palma</h1>
+          <p class="hero-line" data-en="I design and build cloud and AI systems." data-it="Progetto e realizzo sistemi cloud e di intelligenza artificiale.">I design and build cloud and AI systems.</p>
+          <p class="hero-detail" data-en="I start from the problem, build the system, and verify how it behaves. Constraints, costs, and operational limits remain explicit." data-it="Parto dal problema, costruisco il sistema e ne verifico il comportamento. Vincoli, costi e limiti operativi restano espliciti.">I start from the problem, build the system, and verify how it behaves. Constraints, costs, and operational limits remain explicit.</p>
+          <a class="text-link" href="#work"><span data-en="Selected work" data-it="Progetti selezionati">Selected work</span><span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section id="work" class="section-heading" aria-labelledby="work-title">
+          <p class="eyebrow" data-en="Selected work" data-it="Progetti selezionati">Selected work</p>
+          <h2 id="work-title" data-en="Experiments, systems, and tools" data-it="Esperimenti, sistemi e strumenti">Experiments, systems, and tools</h2>
+          <p data-en="Each project states what was built, what was observed, and where the result stops." data-it="Ogni progetto indica che cosa è stato costruito, che cosa è stato osservato e dove termina il risultato.">Each project states what was built, what was observed, and where the result stops.</p>
+        </section>
+
+        <section class="project project-primary full" aria-labelledby="project-quantistica">
+          <figure class="project-image">
+            <img src="assets/quantistica.png" width="1200" height="630" alt="La Quantistica: electron diffraction rings and the Schrödinger equation" loading="eager">
+          </figure>
+          <div class="project-copy">
+            <p class="project-number">01</p>
+            <h3 id="project-quantistica">La Quantistica</h3>
+            <p data-en="A course that starts from the fundamental experiments of quantum mechanics and derives the Schrödinger equation instead of assuming it. The work began as my 1999 degree thesis and was presented at the 85th Congress of the Italian Physical Society." data-it="Un corso che parte dagli esperimenti fondamentali della meccanica quantistica e ricava l’equazione di Schrödinger invece di assumerla. Il lavoro nasce dalla mia tesi di laurea del 1999 ed è stato presentato all’85° Congresso della Società Italiana di Fisica.">A course that starts from the fundamental experiments of quantum mechanics and derives the Schrödinger equation instead of assuming it. The work began as my 1999 degree thesis and was presented at the 85th Congress of the Italian Physical Society.</p>
+            <p class="project-limit" data-en="The web edition separates measured experiments, theoretical deductions, simulations, and later additions." data-it="L’edizione web distingue esperimenti misurati, deduzioni teoriche, simulazioni e aggiunte successive.">The web edition separates measured experiments, theoretical deductions, simulations, and later additions.</p>
+            <div class="project-links">
+              <a href="https://laquantistica.com/" data-en="Open the course" data-it="Apri il corso">Open the course</a>
+              <a href="https://github.com/faustinopalma/laquantistica">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="project full" aria-labelledby="project-lanternina">
+          <figure class="project-image">
+            <img src="assets/lanternina.jpg" width="1200" height="1600" alt="Lanternina e-paper display mounted in a room" loading="lazy">
+          </figure>
+          <div class="project-copy">
+            <p class="project-number">02</p>
+            <h3 id="project-lanternina">Lanternina</h3>
+            <p data-en="A home activity system for adolescents. AI proposes an activity; a parent reviews it; paper and e-paper devices deliver it. The local hub controls equipment and time, while models run in Microsoft Foundry." data-it="Un sistema domestico di attività per adolescenti. L’AI propone un’attività; un genitore la rivede; carta e display e-paper la rendono disponibile. L’hub locale controlla dispositivi e tempi, mentre i modelli operano in Microsoft Foundry.">A home activity system for adolescents. AI proposes an activity; a parent reviews it; paper and e-paper devices deliver it. The local hub controls equipment and time, while models run in Microsoft Foundry.</p>
+            <p class="project-limit" data-en="Content safety and parental approval are gates. No model runs in the house." data-it="La sicurezza dei contenuti e l’approvazione del genitore sono passaggi obbligati. Nessun modello opera in casa.">Content safety and parental approval are gates. No model runs in the house.</p>
+            <div class="project-links"><a href="https://github.com/faustinopalma/lanternina">GitHub</a></div>
+          </div>
+        </section>
+
+        <section class="project full" aria-labelledby="project-territorial">
+          <figure class="project-image map-image">
+            <img src="assets/territorial.jpg" width="1481" height="1800" alt="Map of modelled daily logistics savings around Milan" loading="lazy">
+          </figure>
+          <div class="project-copy">
+            <p class="project-number">03</p>
+            <h3 id="project-territorial">Territorial Service Network Lab</h3>
+            <p data-en="Python and R notebooks compare centres that dispatch teams across a territory. The method estimates productivity, travel time, cost, coverage, and shared capacity from explicit inputs." data-it="Notebook Python e R confrontano centri che inviano squadre su un territorio. Il metodo stima produttività, tempi di viaggio, costi, copertura e capacità condivisa a partire da dati espliciti.">Python and R notebooks compare centres that dispatch teams across a territory. The method estimates productivity, travel time, cost, coverage, and shared capacity from explicit inputs.</p>
+            <p class="project-limit" data-en="Public geography is real. Demand, premises, capacity, costs, and travel scenarios are illustrative." data-it="La geografia pubblica è reale. Domanda, sedi, capacità, costi e scenari di viaggio sono illustrativi.">Public geography is real. Demand, premises, capacity, costs, and travel scenarios are illustrative.</p>
+            <div class="project-links"><a href="https://github.com/faustinopalma/territorial-service-network-lab">GitHub</a></div>
+          </div>
+        </section>
+
+        <section class="project-index full" aria-label="More selected projects">
+          <article class="project-row">
+            <p class="project-number">04</p>
+            <div><h3>Cantina</h3><p data-en="Java tools written in 2002 to automate the assessment of large network configurations. The repository preserves the original code and explains the processing pipeline." data-it="Strumenti Java scritti nel 2002 per automatizzare l’analisi di configurazioni di rete estese. Il repository conserva il codice originale e descrive la catena di elaborazione.">Java tools written in 2002 to automate the assessment of large network configurations. The repository preserves the original code and explains the processing pipeline.</p></div>
+            <a href="https://github.com/faustinopalma/cantina" aria-label="Cantina on GitHub">GitHub</a>
+          </article>
+          <article class="project-row">
+            <p class="project-number">05</p>
+            <div><h3>Microsoft Foundry Governance Lab</h3><p data-en="A deployable reference lab for model access, managed identities, private networking, data protection, and an API Management AI gateway." data-it="Un laboratorio distribuibile per accesso ai modelli, identità gestite, rete privata, protezione dei dati e AI Gateway su API Management.">A deployable reference lab for model access, managed identities, private networking, data protection, and an API Management AI gateway.</p></div>
+            <a href="https://github.com/faustinopalma/foundry-governance-lab" aria-label="Foundry Governance Lab on GitHub">GitHub</a>
+          </article>
+          <figure class="wide-figure">
+            <img src="assets/governance.png" width="1520" height="1040" alt="Architecture of the Microsoft Foundry governance reference lab" loading="lazy">
+            <figcaption data-en="The lab separates shared model access, project resources, private data dependencies, and gateway controls." data-it="Il laboratorio separa accesso condiviso ai modelli, risorse di progetto, dipendenze dati private e controlli del gateway.">The lab separates shared model access, project resources, private data dependencies, and gateway controls.</figcaption>
+          </figure>
+          <article class="project-row">
+            <p class="project-number">06</p>
+            <div><h3>Anomaly Detection Fabric Demo</h3><p data-en="A multivariate industrial-monitoring demo using Transformer autoencoders, ONNX, Fabric Eventstream, and Eventhouse. Controlled injections expose detections, misses, and false alarms." data-it="Una dimostrazione di monitoraggio industriale multivariato con autoencoder Transformer, ONNX, Fabric Eventstream ed Eventhouse. Iniezioni controllate rendono visibili rilevamenti, mancate rilevazioni e falsi allarmi.">A multivariate industrial-monitoring demo using Transformer autoencoders, ONNX, Fabric Eventstream, and Eventhouse. Controlled injections expose detections, misses, and false alarms.</p></div>
+            <a href="https://github.com/faustinopalma/anomaly-detection-fabric-demo" aria-label="Anomaly Detection Fabric Demo on GitHub">GitHub</a>
+          </article>
+          <article class="project-row">
+            <p class="project-number">07</p>
+            <div><h3>AWR Assessment</h3><p data-en="Python tools for extracting and reviewing Oracle AWR report data. The implementation is public; the repository currently contains only minimal documentation." data-it="Strumenti Python per estrarre e analizzare dati dai report Oracle AWR. L’implementazione è pubblica; il repository contiene al momento una documentazione minima.">Python tools for extracting and reviewing Oracle AWR report data. The implementation is public; the repository currently contains only minimal documentation.</p></div>
+            <a href="https://github.com/faustinopalma/awr_assessment" aria-label="AWR Assessment on GitHub">GitHub</a>
+          </article>
+        </section>
+
+        <section id="method" class="section-heading" aria-labelledby="method-title">
+          <p class="eyebrow" data-en="Method" data-it="Metodo">Method</p>
+          <h2 id="method-title" data-en="From an observed problem to a tested system" data-it="Da un problema osservato a un sistema verificato">From an observed problem to a tested system</h2>
+        </section>
+        <ol class="method-list full">
+          <li><span>01</span><div><h3 data-en="Define the boundary" data-it="Definire il confine">Define the boundary</h3><p data-en="State the decision, the available evidence, and what remains unknown." data-it="Indicare la decisione, le evidenze disponibili e ciò che resta ignoto.">State the decision, the available evidence, and what remains unknown.</p></div></li>
+          <li><span>02</span><div><h3 data-en="Build the smallest complete path" data-it="Costruire il percorso completo minimo">Build the smallest complete path</h3><p data-en="Connect architecture, implementation, operations, and the people who must use the result." data-it="Collegare architettura, implementazione, operazioni e persone che devono usare il risultato.">Connect architecture, implementation, operations, and the people who must use the result.</p></div></li>
+          <li><span>03</span><div><h3 data-en="Measure the behaviour" data-it="Misurare il comportamento">Measure the behaviour</h3><p data-en="Test expected outcomes, failures, recovery, cost, and limits. A successful deployment is not sufficient evidence." data-it="Verificare risultati attesi, errori, recupero, costi e limiti. Una distribuzione riuscita non è una prova sufficiente.">Test expected outcomes, failures, recovery, cost, and limits. A successful deployment is not sufficient evidence.</p></div></li>
+        </ol>
+
+        <section id="experience" class="section-heading" aria-labelledby="experience-title">
+          <p class="eyebrow" data-en="Experience" data-it="Esperienza">Experience</p>
+          <h2 id="experience-title" data-en="Architecture, delivery, and operations" data-it="Architettura, realizzazione e operazioni">Architecture, delivery, and operations</h2>
+          <p data-en="My work has moved between engineering, consulting, programme delivery, and cloud architecture. The common task is to make a technical decision executable." data-it="Il mio lavoro attraversa ingegneria, consulenza, gestione di programmi e architetture cloud. Il compito comune è rendere eseguibile una decisione tecnica.">My work has moved between engineering, consulting, programme delivery, and cloud architecture. The common task is to make a technical decision executable.</p>
+        </section>
+        <dl class="evidence full">
+          <div><dt>15</dt><dd data-en="Amazon Logistics sites delivered in Italy" data-it="siti Amazon Logistics realizzati in Italia">Amazon Logistics sites delivered in Italy</dd></div>
+          <div><dt>20%</dt><dd data-en="increase in launch cadence from a Python programme-management tool" data-it="incremento della cadenza di apertura ottenuto con uno strumento Python di gestione del programma">increase in launch cadence from a Python programme-management tool</dd></div>
+          <div><dt>&gt;€50M</dt><dd data-en="business cases managed for logistics programmes" data-it="business case gestiti per programmi logistici">business cases managed for logistics programmes</dd></div>
+          <div><dt>20+ years</dt><dd data-en="from network engineering to cloud and AI systems" data-it="dall’ingegneria di rete ai sistemi cloud e AI">from network engineering to cloud and AI systems</dd></div>
+        </dl>
+        <div class="career full" aria-label="Career history">
+          <p><strong>2021–</strong><span data-en="Microsoft · Chief Cloud + AI Solution Architect" data-it="Microsoft · Chief Cloud + AI Solution Architect">Microsoft · Chief Cloud + AI Solution Architect</span></p>
+          <p><strong>2019–2021</strong><span>AWS · Senior Solutions Architect</span></p>
+          <p><strong>2017–2019</strong><span>Amazon Logistics · Launch Program Manager</span></p>
+          <p><strong>2008–2017</strong><span>BCG, EFESO · Consulting</span></p>
+          <p><strong>2000–2006</strong><span data-en="Getronics, Lutech · Network engineering" data-it="Getronics, Lutech · Ingegneria di rete">Getronics, Lutech · Network engineering</span></p>
+        </div>
+
+        <section id="contact" class="contact full" aria-labelledby="contact-title">
+          <p class="eyebrow" data-en="Contact" data-it="Contatti">Contact</p>
+          <h2 id="contact-title" data-en="Public work and professional contact" data-it="Lavori pubblici e contatto professionale">Public work and professional contact</h2>
+          <p data-en="Source code and technical notes are on GitHub. Career history and direct contact are on LinkedIn." data-it="Codice sorgente e note tecniche sono su GitHub. Percorso professionale e contatto diretto sono su LinkedIn.">Source code and technical notes are on GitHub. Career history and direct contact are on LinkedIn.</p>
+          <div class="contact-links">
+            <a href="https://github.com/faustinopalma">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/faustinopalma/">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <footer class="footer full">
+          <p>© <span id="year">2026</span> Faustino Palma</p>
+          <p data-en="Static site. No analytics, cookies, or external runtime dependencies." data-it="Sito statico. Nessun sistema di analisi, cookie o dipendenza esterna a runtime.">Static site. No analytics, cookies, or external runtime dependencies.</p>
+        </footer>
+      </article>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
