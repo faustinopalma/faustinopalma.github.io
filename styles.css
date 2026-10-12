@@ -278,10 +278,7 @@ dd {
 
 .page {
   display: grid;
-  grid-template-columns:
-    [full-start] minmax(0, 1fr)
-    [text-start] min(100%, 42rem) [text-end]
-    minmax(0, 1fr) [full-end];
+  grid-template-columns: [full-start text-start] minmax(0, 1fr) [text-end full-end];
   width: 100%;
   max-width: 68rem;
   padding: 3rem 3.5rem;
@@ -392,13 +389,9 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
   gap: 3rem;
-  align-items: center;
+  align-items: start;
   padding: 3rem 0;
   border-top: 1px solid var(--cp-border);
-}
-
-.project:nth-of-type(even) .project-image {
-  order: 2;
 }
 
 .project-image {
@@ -453,7 +446,7 @@ h3 {
 
 .project-row {
   display: grid;
-  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  grid-template-columns: 2rem minmax(0, 1fr) 10.75rem;
   gap: 1rem;
   align-items: baseline;
   padding: 2rem 0;
@@ -472,6 +465,14 @@ h3 {
 .project-row > a {
   font-size: 0.95rem;
   font-weight: 700;
+}
+
+.project-row > .project-links {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 0;
+  font-size: 0.95rem;
 }
 
 .wide-figure {
@@ -722,15 +723,12 @@ body[data-ready] .hero > :nth-child(5) { animation-delay: 240ms; }
     gap: 1.5rem;
   }
 
-  .project:nth-of-type(even) .project-image {
-    order: 0;
-  }
-
   .project-row {
     grid-template-columns: 2rem minmax(0, 1fr);
   }
 
-  .project-row > a {
+  .project-row > a,
+  .project-row > .project-links {
     grid-column: 2;
   }
 
